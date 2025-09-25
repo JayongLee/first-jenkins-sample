@@ -12,4 +12,9 @@ public class HelloController {
     public String hello() {
         return "Hello Jenkins!!";
     }
+
+    @GetMapping("/v2")
+    public String hello2() {
+        return "자동 CI/CD 성공~~";
+    }
 }
