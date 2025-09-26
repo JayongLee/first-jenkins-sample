@@ -10,7 +10,7 @@ node {
 
   stage('SonarQube Analysis') {
     withSonarQubeEnv() {
-      sh "./gradlew sonar"
+     sh './gradlew sonarqube --no-daemon'
     }
   }
 }
